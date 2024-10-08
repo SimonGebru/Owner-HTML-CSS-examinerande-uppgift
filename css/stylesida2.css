@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* Header och Navigation */
+.header__nav {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Hero-sektionen */
+.hero {
+    position: relative;
+    height: 50vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero__icon {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Formulär för ny plantering */
+.add-plantering {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-plantering h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.add-plantering__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-plantering__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.add-plantering__input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.add-plantering__input-group:last-child {
+    margin-right: 0; /* Ta bort sista marginalen för den högra input */
+}
+
+.add-plantering__input-group label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.add-plantering__input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-plantering__button {
+    padding: 20px 50px;
+    margin: 20px auto;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    align-self: flex-start;
+}
+
+.add-plantering__button:hover {
+    background-color: #004d00;
+}
+
+/* Sektion för planteringar */
+.planteringar {
+    margin: 40px auto;
+    max-width: 100%; /* Tar upp hela sidans bredd */
+    padding: 0 20px; /* Lägg till padding för att hålla avstånd från kanten */
+    text-align: left; /* Gör att innehållet börjar från vänster */
+}
+
+.planteringar h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.planteringar__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 500px); /* Justerar till flera kolumner beroende på skärmstorlek */
+    gap: 20px;
+}
+
+.plantering {
+    text-align: center;
+    border: 1px solid #f9f9f9;
+    background-color: #f9f9f9;
+    position: relative;
+    padding: 20px;
+    height: 40rem;
+    width: 30rem;
+    }
+.plantering__icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    transform: scale(0.8); 
+    opacity: 0.8; 
+}
+.plantering img {
+    width: 100%;
+    height: 80%;
+    display: block;
+}
+.plantering--flytta {
+
+    
+}
+.plantering__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+}
+.plantering__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.plantering__button {
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.plantering__button:hover {
+    background-color: darkred;
+}
+
+/* Bildgalleri */
+.gallery {
+    margin: 40px auto;
+    max-width: 150%;
+}
+
+.gallery__grid {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: brown;
+}
+
+.gallery__image {
+    width: 80%;
+    height: 80%;
+    margin-left: 50px;
+    align-self: center;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.footer__top-link {
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.footer__top-link:hover {
+    text-decoration: underline;
+}

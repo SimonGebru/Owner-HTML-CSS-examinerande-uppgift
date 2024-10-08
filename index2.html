@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/stylesida2.css">
+    <title>Planned Planhood Sida-2</title>
 </head>
 <body>
-    
+
+<!-- Header (Navigeringsmenyn) -->
+<header class="header">
+    <nav class="header__nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#">Planer</a></li>
+            <li class="nav__item"><a href="#">Historik</a></li>
+            <li class="nav__item"><a href="#">Tips</a></li>
+            <li class="nav__item"><a href="index.html">Logga ut</a></li> <!-- Länk till första sidan -->
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section (Stora bilden med text och ikon) -->
+<section class="hero">
+    <div class="hero__image-wrapper">
+        <img src="Bilder/Footer.avif" alt="Hand touching plant" class="hero__image">
+        <div class="hero__overlay">
+            <img src="Bilder/Logo.svg" alt="Ikon" class="hero__icon">
+            <h1 class="hero__title">Mina sidor</h1>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main>
+    <!-- Formulär för ny plantering -->
+    <section class="add-plantering">
+        <h2>Lägg till ny plantering:</h2>
+        <form class="add-plantering__form">
+            <div class="add-plantering__row">
+                <div class="add-plantering__input-group">
+                    <label for="planta">Planta:</label>
+                    <input type="text" id="planta" name="planta" required>
+                </div>
+                <div class="add-plantering__input-group">
+                    <label for="datum">Datum:</label>
+                    <input type="date" id="datum" name="datum" required>
+                </div>
+            </div>
+            <button type="submit" class="add-plantering__button">Lägg till</button>
+        </form>
+    </section>
+
+    <!-- Sektion för planerade planteringar -->
+    <section class="planteringar">
+        <h2>Dina planerade planteringar:</h2>
+        <div class="planteringar__grid">
+            <div class="plantering">
+                <img src="Bilder/Gurka.avif" alt="Gurka">
+                <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
+                <div class="plantering__info">
+                    <h3>Gurka</h3>
+                    <p>15 april 2024</p>
+                    </div>
+                    <div class="plantering__actions">
+                    <p>Rico Coolio</p>
+                <button class="plantering__button">TA BORT</button>
+            </div>
+            </div>
+            <!-- Fler planteringar -->
+        </div>
+    </section>
+
+    <!-- Sektion för tidigare planterade planteringar -->
+    <section class="planteringar planteringar--previous">
+        <h2>Dina planterade planteringar:</h2>
+        <div class="planteringar__grid">
+            <div class="plantering">
+                <img src="Bilder/Gurka.avif" alt="Gurka">
+                <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
+                <div class="plantering__info">
+                    <h3>Gurka</h3>
+                    <p>15 april 2024</p>
+                    </div>
+                    <div class="plantering__actions">
+                    <p>Rico Coolio</p>
+                    <button class="plantering__button">TA BORT</button>
+                    </div>
+        </div>
+        
+            <div class="plantering plantering--flytta">
+                <img src="Bilder/Gurka.avif" alt="Gurka">
+                <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
+                <div class="plantering__info">
+                    <h3>Gurka</h3>
+                    <p>15 april 2024</p>
+                </div>
+                    <div class="plantering__actions">
+                    <p>Rico Coolio</p>
+                <button class="plantering__button">TA BORT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bildgalleri längst ner -->
+    <section class="gallery">
+        <div class="gallery__grid">
+            <img src="Bilder/plockar.avif" alt="Man plockar växter" class="gallery__image">
+            <img src="Bilder/vattenkanna.avif" alt="Vatten från vattenkanna" class="gallery__image">
+            <img src="Bilder/massagrönsaker.avif" alt="Olika grönsaker" class="gallery__image">
+            <img src="Bilder/tjejmedhatt.avif" alt="Tjej med hatt" class="gallery__image">
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <a href="#" class="footer__top-link">Till toppen av sidan</a>
+</footer>
+
 </body>
 </html>

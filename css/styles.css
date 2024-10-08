@@ -127,8 +127,8 @@ body {
 }
 
 .planned-planthood__icon-wrapper {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     background-color: rgb(1, 163, 1); /* Samma färg som ikonen */
     display: flex;
@@ -180,6 +180,12 @@ body {
 
 .planteringar {
     padding: 40px 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        font-size: 35px;
+    }
 }
 
 .planteringar__grid {
