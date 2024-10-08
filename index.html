@@ -66,8 +66,8 @@
             <div class="plantering">
                 <img src="Bilder/Gurka.avif" alt="Gurka">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <h3>Gurka</h3>
                 <div class="plantering__info">
+                <h3>Gurka</h3>
                 <p>15 april 2024</p>
                 </div>
                 <div class="plantering__actions">
@@ -78,8 +78,8 @@
             <div class="plantering">
                 <img src="Bilder/Tomat.avif" alt="Tomat">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <h3>Tomat</h3>
                 <div class="plantering__info">
+                <h3>Tomat</h3>
                 <p>1 april 2024</p>
                 </div>
                 <div class="plantering__actions">
@@ -90,8 +90,8 @@
             <div class="plantering">
                 <img src="Bilder/Tomat1.avif" alt="Tomat">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <h3>Tomat</h3>
                 <div class="plantering__info">
+                <h3>Tomat</h3>
                 <p>1 april 2024</p>
                 </div>
                 <div class="plantering__actions">
@@ -102,30 +102,32 @@
             <div class="plantering ">
                 <img src="Bilder/Sockerärtor.avif" alt="Sockerärtor">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <h3>Sockerärtor</h3>
                 <div class="plantering__info">
+                <h3>Sockerärtor</h3>
                 <p>15 april 2024</p>
                 </div>
-                <div class="plantering__actions"></div>
+                <div class="plantering__actions">
                 <p>Frippe</p>
                 <button>TA BORT</button>
+                </div>
             </div>
             <div class="plantering">
                 <img src="Bilder/photo-1555447740-03e40562af94.avif" alt="Majrova">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <h3>Majrova</h3>
                 <div class="plantering__info">
+                <h3>Majrova</h3>
                 <p>1 april 2024</p>
                 </div>
-                <div class="plantering__actions"></div>
+                <div class="plantering__actions">
                 <p>Emma på 4an</p>
                 <button>TA BORT</button>
+                </div>
             </div>
             <div class="plantering">
                 <img src="Bilder/squash.avif" alt="Squash">
-                <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <h3>Squash</h3>
+                <img src="Bilder/plant.svg" alt="icon för plantering" class="plantering__icon">
                 <div class="plantering__info">
+                <h3>Squash</h3>
                 <p>15 april 2024</p>
                 </div>
                 <div class="plantering__actions">
@@ -133,29 +135,40 @@
                 <button>TA BORT</button>
                 </div>
             </div>
-            <!-- Lägg till fler planteringar här -->
         </div>
-        <button>Visa fler</button>
+        <button class="visafler">Visa fler</button>
     </section>
 
     <!-- Tidigare Odlings Section -->
     <section class="odlingar">
-        <h2>Våra tidigare odlingar</h2>
-        <button>Planterade plantor</button>
+        <div class="odlingar__content">
+            <div class="odlingar__text">
+                <h2>Våra tidigare odlingar</h2>
+                <p>Våren är äntligen här i kollektivet! Lorem ipsum dolor sit amet consectetur. <br>Sit venenatis arcu nunc consectetur neque. <br>Vel amet netus amet eu elit.</p>
+                <button class="odlingar__button">Planterade plantor</button>
+            </div>
+            <div class="odlingar__icon">
+                <img src="Bilder/plant.svg" alt="Ikon för odlingar">
+            </div>
+        </div>
     </section>
 </main>
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="footer__contact">
-        <p>Vi hörs!</p>
-        <p>0701-234567</p>
-        <p>mail@mail.se</p>
+    <div class="footer__overlay">
+        <p class="footer__heading">Vi hörs!</p>
+        <div class="footer__contact">
+            <p class="footer__phone">
+                <img src="Bilder/telephone.svg" alt="Telefon-ikon" class="footer__ikon"> 0701-234567</p>
+            <p class="footer__email">mail@mail.se <img src="Bilder/envelope.svg" alt="mail ikon" class="footer__ikon"></p>
+        </div>
     </div>
-    <div class="footer__image">
-        <img src="Bilder/Footer.avif" alt="Hand touching plant">
+    <div class="footer__image-wrapper">
+        <img src="Bilder/Footer.avif" alt="Hand touching plant" class="footer__image">
+        <img src="Bilder/Logo.svg" alt="Icon" class="footer__icon">
     </div>
-    <a href="#">Till toppen av sidan</a>
+    <a href="#" class="footer__top-link">Till toppen av sidan</a>
 </footer>
 </body>
 </html>
