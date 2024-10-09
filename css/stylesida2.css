@@ -27,7 +27,7 @@ body {
 
 .nav__item a {
     text-decoration: none;
-    color: #333;
+    color: #228B22;
     font-size: 1.1rem;
 }
 
@@ -127,14 +127,14 @@ body {
 }
 
 .add-plantering__button {
-    padding: 20px 50px;
+    padding: 20px 60px;
     margin: 20px auto;
     background-color: #006400;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2rem;
     align-self: flex-start;
 }
 
