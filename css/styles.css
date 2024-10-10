@@ -69,6 +69,13 @@ body {
     width: 140px; /* Justera storleken på SVG-ikonerna */
     height: auto;
 }
+.hamburger-menu {
+    display: none; /* Dölj på stora skärmar */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
 
 /* Navigation Bar */
 .header__nav {
@@ -185,6 +192,12 @@ body {
         margin-top: 20px;
         font-size: 35px;
     }
+    h4 {
+        color: #228B22;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
 }
 
 .planteringar__grid {
@@ -223,6 +236,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .plantering__icon-trash {
+        display: none;
+    }
 }
 
 .plantering__actions p {
@@ -254,6 +270,7 @@ body {
     transform: scale(0.8); 
     opacity: 0.8; 
 }
+
 .plantering h3 {
     margin: 15px 0;
 }

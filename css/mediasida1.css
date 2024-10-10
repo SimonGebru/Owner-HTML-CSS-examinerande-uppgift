@@ -60,16 +60,12 @@
         display: none; /* Dölj den vanliga navigeringen */
     }
 
-    /* Hamburgerikon */
     .hamburger-menu {
-        display: block; /* Visa hamburgerikonen på mobila skärmar */
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 30px;
-        height: 30px;
+        display: block; /* Visa på skärmar mindre än 500px */
     }
-
+    .hamburger-menu:hover {
+        transform: scale(1.1);
+    }
     /* Hero-sektionen */
     .hero {
         height: auto; /* Gör höjden flexibel */
@@ -144,10 +140,6 @@
         gap: 20px;
         margin: 0 auto;
     }
-
-    
-    
-
     .plantering__info h3 {
         font-size: 1.5rem;
     }
@@ -158,8 +150,18 @@
 
     .plantering__actions button {
         font-size: 0.9rem;
+        display: none;
     }
-
+    .plantering__actions {
+    
+        .plantering__icon-trash {
+            display: block;
+            width: 2rem;
+        }
+        .plantering__icon-trash:hover {
+            transform: scale(1.1);
+        }
+    }
     /* Knappen Visa fler */
     .visafler {
         width: 80%;
@@ -178,7 +180,7 @@
         flex-direction: column; /* Ändra layouten till kolumn för mobil */
         align-items: center;
         text-align: center;
-        margin-top: 20px;
+        
         height: 100vh;
         margin: 0;
     }
@@ -225,10 +227,15 @@
         height: 50%;
         margin-top: 12.2rem;
     }
-
-    .footer__contact {
-        flex-direction: column;
+    .footer__contact p {
+        margin: 0;
+        display: flex;
         align-items: center;
+        font-size: 0.9rem; /* Justera textstorleken */
+    }
+    .footer__heading {
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
 
     .footer__top-link {

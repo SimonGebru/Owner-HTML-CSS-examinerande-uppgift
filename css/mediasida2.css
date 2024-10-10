@@ -1,0 +1,111 @@
+@media (max-width: 500px) {
+    .header__nav {
+        display: none; /* Dölj den vanliga navigeringen */
+    }
+
+    .hamburger-menu {
+        display: block; /* Visa på skärmar mindre än 500px */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+    }
+    .hamburger-menu:hover {
+        transform: scale(1.1);
+    }
+    .hero__overlay {
+        top: 30%; /* Justera positionen för hero-innehållet */
+    }
+
+    .hero__title {
+        font-size: 1.5rem; /* Minska textstorleken för mobilvyn */
+        
+    }
+    .hero__icon{
+        margin-top: 200px;
+    }
+    .add-plantering__row {
+        flex-direction: column; /* Ändrar layouten till en kolumn */
+        gap: 10px; /* Avstånd mellan fälten */
+    }
+
+    .add-plantering__input-group {
+        width: 100%; /* Gör input-fälten bredare */
+    }
+    /* Justera formuläret och inputfält */
+    .add-plantering__form {
+        flex-direction: column; /* Placera inputfält på separata rader */
+        gap: 10px;
+    }
+
+    .add-plantering__button {
+        width: 100%; /* Gör knappen bredare */
+        font-size: 1.2rem; /* Justera textstorlek */
+    }
+
+    /* Styla planteringar för mobilvy */
+    .planteringar__grid {
+        grid-template-columns: 1fr 1fr; /* En kolumn för mobilvyn */
+        gap: 20px;
+    }
+    .plantering {
+        width: 40vw;
+        height: auto;
+        display: grid;
+        margin-right: 10px;
+        background-color: white;
+        
+        .plantering__icon {
+            height: 150px;
+            object-fit: fill;
+            margin-top: 40px;
+        }
+        .plantering__bild {
+            height: 200px;
+            width: 170px;
+            object-fit: cover;
+        }
+    }
+    .plantering__info {
+        h3 {
+            font-size: 0.9rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+    .plantering__actions {
+        
+        p {
+            font-size: 0.9rem;
+        }
+        .plantering__button{
+            display: none;
+        }
+
+        .plantering__icon-trash {
+            display: block;
+            width: 2rem;
+        }
+        .plantering__icon-trash:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    /* Styla bildgalleriet för två kolumner i mobilvy */
+    .gallery__grid {
+        grid-template-columns: 1fr 1fr; /* Två kolumner */
+        gap: 10px;
+        width: 100vw;
+    }
+
+    .gallery__image {
+        width: 12rem; /* Gör bilderna bredare */
+        height: 6rem;
+        margin: 0;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 15px;
+    }
+    
+}
