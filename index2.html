@@ -25,13 +25,13 @@
 </header>
 <!-- Hero Section (Stora bilden med text och ikon) -->
 <section class="hero">
-    <div class="hero__image-wrapper">
+    <figure class="hero__image-wrapper">
         <img src="Bilder/Footer.avif" alt="Hand touching plant" class="hero__image">
-        <div class="hero__overlay">
+        <figure class="hero__overlay">
             <img src="Bilder/Logo.svg" alt="Ikon" class="hero__icon">
             <h1 class="hero__title">Mina sidor</h1>
-        </div>
-    </div>
+        </figure>
+    </figure>
 </section>
 
 <!-- Main Content -->
@@ -40,7 +40,7 @@
     <section class="add-plantering">
         <h2>Lägg till ny plantering:</h2>
         <form class="add-plantering__form">
-            <div class="add-plantering__row">
+            <section class="add-plantering__row">
                 <div class="add-plantering__input-group">
                     <label for="planta">Planta:</label>
                     <input type="text" id="planta" name="planta" required>
@@ -49,7 +49,7 @@
                     <label for="datum">Datum:</label>
                     <input type="date" id="datum" name="datum" required>
                 </div>
-            </div>
+            </section>
             <button type="submit" class="add-plantering__button">Lägg till</button>
         </form>
     </section>
@@ -57,65 +57,65 @@
     <!-- Sektion för planerade planteringar -->
     <section class="planteringar">
         <h2>Dina planerade planteringar:</h2>
-        <div class="planteringar__grid">
-            <article class="plantering">
+        <article class="planteringar__grid">
+            <section class="plantering">
                 <img src="Bilder/Gurka.avif" alt="Gurka" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <div class="plantering__info">
+                <section class="plantering__info">
                     <h3>Gurka</h3>
                     <p>15 april 2024</p>
-                    </div>
-                    <div class="plantering__actions">
+                    </section>
+                    <section class="plantering__actions">
                     <p>Rico Coolio</p>
                 <button class="plantering__button">TA BORT</button>
                 <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
-            </div>
-            </article>
-        </div>
+            </section>
+            </section>
+        </article>
     </section>
 
     <!-- Sektion för tidigare planterade planteringar -->
     <section class="planteringar planteringar--previous">
         <h2>Dina planterade planteringar:</h2>
-        <div class="planteringar__grid">
-            <article class="plantering">
+        <article class="planteringar__grid">
+            <section class="plantering">
                 <img src="Bilder/Gurka.avif" alt="Gurka" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <div class="plantering__info">
+                <section class="plantering__info">
                     <h3>Gurka</h3>
                     <p>15 april 2024</p>
-                    </div>
-                    <div class="plantering__actions">
+                    </section>
+                    <section class="plantering__actions">
                     <p>Rico Coolio</p>
                     <button class="plantering__button">TA BORT</button>
                     <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
-                    </div>
-        </article>
+                    </section>
+        </section>
         
             <article class="plantering plantering--flytta">
                 <img src="Bilder/Gurka.avif" alt="Gurka" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
-                <div class="plantering__info">
+                <section class="plantering__info">
                     <h3>Gurka</h3>
                     <p>15 april 2024</p>
-                </div>
-                    <div class="plantering__actions">
+                </section>
+                    <section class="plantering__actions">
                     <p>Rico Coolio</p>
                 <button class="plantering__button">TA BORT</button>
                 <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
-                </div>
+                </section>
             </article>
-        </div>
+        </article>
     </section>
 
     <!-- Bildgalleri längst ner -->
     <section class="gallery">
-        <div class="gallery__grid">
+        <figure class="gallery__grid">
             <img src="Bilder/plockar.avif" alt="Man plockar växter" class="gallery__image">
             <img src="Bilder/vattenkanna.avif" alt="Vatten från vattenkanna" class="gallery__image">
             <img src="Bilder/massagrönsaker.avif" alt="Olika grönsaker" class="gallery__image">
             <img src="Bilder/tjejmedhatt.avif" alt="Tjej med hatt" class="gallery__image">
-        </div>
+        </figure>
     </section>
 </main>
 
