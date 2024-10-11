@@ -153,7 +153,6 @@ body {
     margin: 40px auto;
     max-width: 100%; /* Tar upp hela sidans bredd */
     padding: 0 20px; /* Lägg till padding för att hålla avstånd från kanten */
-    text-align: left; /* Gör att innehållet börjar från vänster */
 }
 
 .planteringar h2 {
@@ -170,13 +169,14 @@ body {
 
 .plantering {
     text-align: center;
-    border: 1px solid #f9f9f9;
     background-color: #f9f9f9;
     position: relative;
     padding: 20px;
     height: 40rem;
     width: 30rem;
-    }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0dcdc;
+}
 .plantering__icon {
     position: absolute;
     top: 10px;
@@ -190,10 +190,6 @@ body {
     width: 100%;
     height: 80%;
     display: block;
-}
-.plantering--flytta {
-
-    
 }
 .plantering__info {
     display: flex;

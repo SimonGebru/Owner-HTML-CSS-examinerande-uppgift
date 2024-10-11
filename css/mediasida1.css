@@ -34,21 +34,21 @@
     .header__grid-item--brown {
         background-color: #A0522D;
         img {
-            height: 90px;
-            margin-top: 150px;
+            height: 120px;
+            margin-top: 170px;
         }
     }
 
     .header__grid-item--green {
         background-color: #228B22;
         img{
-            height: 90px;
-            margin-top: 150px;
+            height: 120px;
+            margin-top: 170px;
         }
     }
 
     .header__image-icon {
-        width: 170px; /* Justera storleken på ikonen */
+        width: 190px; /* Justera storleken på ikonen */
         margin-top: 20%;
         top: 50%;
         left: 50%;
@@ -129,11 +129,16 @@
             object-fit: fill;
             margin-top: 40px;
         }
+
     }
     .planering__text {
         padding-top: 100px;
     }
-
+    .planteringar {
+        h4{
+        margin-top: 170px;
+        }
+    }
     .planteringar__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -162,15 +167,10 @@
             transform: scale(1.1);
         }
     }
-    /* Knappen Visa fler */
+    
     .visafler {
         width: 80%;
-        margin: 20px auto;
-    }
-    /* Knappen Visa fler */
-    .visafler {
-        width: 80%;
-        margin: 20px auto;
+        margin: 40px auto;
         display: block;
     }
 
@@ -247,7 +247,7 @@
         transform: translate(-50%, -50%);
         width: 150px;
         height: auto;
-        z-index: 2;
+        z-index: 2; /* vart den hamnar*/
         top: 20%;
         left: 50%;
     }

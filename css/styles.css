@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden; /* Förhindra horisontell scroll */
+    height: 100%;
 }
 
 /* Header */
@@ -58,11 +60,11 @@ body {
 }
 
 .header__grid-item--brown {
-    background-color: #A0522D; /* Brun färg */
+    background-color: #9E6D52; /* Brun färg */
 }
 
 .header__grid-item--green {
-    background-color: #228B22; /* Grön färg */
+    background-color: #0A846E; /* Grön färg */
 }
 
 .header__grid-item img {
@@ -97,7 +99,7 @@ body {
 
 .nav__item a {
     text-decoration: none;
-    color: rgb(1, 163, 1);
+    color: #0A846E;
     font-weight: bold;
     padding: 10px 20px;
 }
@@ -106,15 +108,14 @@ body {
 .hero {
     background-size: cover;
     background-position: center;
-    height: 70px;
+    min-height: 20vh;
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-top: 19px;
 }
 
 .hero__title {
-    color: rgb(1, 163, 1);
+    color: #0A846E;
     font-size: 3.5rem;
 }
 
@@ -136,7 +137,7 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background-color: rgb(1, 163, 1); /* Samma färg som ikonen */
+    background-color: #0A846E; /* Samma färg som ikonen */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +168,7 @@ body {
 }
 
 .planned-planthood__button {
-    background-color: rgb(1, 163, 1);
+    background-color: #0A846E;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -186,6 +187,8 @@ body {
 
 .planteringar {
     padding: 40px 0;
+    min-height: 100vh;
+    overflow: hidden;
     h2 {
         text-align: center;
         margin-bottom: 40px;
@@ -193,7 +196,7 @@ body {
         font-size: 35px;
     }
     h4 {
-        color: #228B22;
+        color: #0A846E;
         text-align: center;
         margin-top: 70px;
         margin-bottom: 50px;
@@ -202,20 +205,28 @@ body {
 
 .planteringar__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 30vw);
     grid-template-rows: repeat(2);
     position: relative;
+    margin-left: 70px;
+    gap: 10px;
 }
 
 .plantering {
     text-align: center;
-    border: 1px solid #f9f9f9;
+    border: 1px solid #e0dcdc;
     background-color: #f9f9f9;
     position: relative;
     padding: 20px;
-    height: 40rem;
-    width: 30rem;
-    margin-left: 6rem;
+    max-height: 90vh; /* Begränsar höjden så att den inte orsakar overflow */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .plantering__bild {
+        max-height: 60vh;
+        max-width: auto;
+        object-fit: cover; /* Behåll proportionerna */
+    }
 }
 .plantering__info {
     display: flex;
@@ -240,6 +251,9 @@ body {
         display: none;
     }
 }
+.plantering__actions button:hover {
+    transform: scale(1.1);
+}
 
 .plantering__actions p {
     color: #959393;
@@ -263,10 +277,8 @@ body {
 }
 .plantering__icon {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
+    bottom: 140px;
+    right: -5px;
     transform: scale(0.8); 
     opacity: 0.8; 
 }
@@ -278,16 +290,21 @@ body {
     display: block; /* Gör knappen till inline-block för att fungera med text-align */
     margin: 20px auto;
     padding: 20px 40px;
-    background-color: green;
+    background-color: #0A846E;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
     border-radius: 5px;
 }
+.visafler:hover {
+    transform: scale(1.1);
+}
 .odlingar {
+    min-height: 40vh;
     padding: 40px 20px;
-    background-color: #f5f5f5;
+    background-color: white;
+    overflow: hidden;
 }
 
 .odlingar__content {
@@ -314,7 +331,7 @@ body {
 
 .odlingar__button {
     padding: 10px 20px;
-    background-color: #006400;
+    background-color: #0A846E;
     color: white;
     border: none;
     cursor: pointer;
@@ -327,7 +344,7 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background-color: #006400;
+    background-color: #0A846E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,7 +370,7 @@ body {
     top: 0;
     left: 0;
     width: 50%; /* Halva bredden av footern */
-    height: 87%; /* Full höjd */
+    height: 50vh; /* halv höjd */
     background-color: rgba(0, 0, 0, 0.6); /* Halvgenomskinlig overlay */
     display: flex;
     flex-direction: column;
@@ -422,6 +439,7 @@ body {
     font-size: 1.4rem;
     text-align: center;
     margin-top: 20px;
+    
 }
 
 .footer__top-link:hover {

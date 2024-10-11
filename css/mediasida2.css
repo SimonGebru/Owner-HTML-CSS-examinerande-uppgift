@@ -57,12 +57,15 @@
         
         .plantering__icon {
             height: 150px;
-            object-fit: fill;
+            object-fit:fill;
             margin-top: 40px;
+            margin-right: 0;
+            margin-left: 20px;
+            
         }
         .plantering__bild {
             height: 200px;
-            width: 170px;
+            width: 130px;
             object-fit: cover;
         }
     }

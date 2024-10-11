@@ -10,12 +10,13 @@
 <body>
 <!-- Header -->
 <header class="header">
-    <div class="header__top">
+    <div class="header__top"><!-- En behållare för det översta innehållet i headern -->
         <div class="header__image-wrapper">
-            <img src="Bilder/Header.avif" alt="Planted hand" class="header__image">
-            <img src="Bilder/Logo.svg" alt="Icon over image" class="header__image-icon">
+            <img src="Bilder/Header.avif" alt="Planted hand" class="header__image"><!-- Bild för headerns bakgrund -->
+            <img src="Bilder/Logo.svg" alt="Icon over image" class="header__image-icon"><!-- En ikon över headerbilden -->
         </div>
         <div class="header__grid">
+            <!-- Innehåller två block, en brun och en grön sektion med ikoner -->
             <div class="header__grid-item header__grid-item--brown">
                 <img src="Bilder/seedling.svg" alt="Icon in brown area">
             </div>
@@ -25,10 +26,11 @@
         </div>
     </div>
         <a href="index2.html" class="hamburger-menu">
-        <img src="Bilder/burgir.png" alt="Hamburgarmeny">
+        <img src="Bilder/burgir.png" alt="Hamburgarmeny"><!-- En hamburgarmeny för mobil navigering -->
         </a>
     <nav class="header__nav">
         <ul class="nav__list">
+            <!-- Lista över navigationslänkar -->
             <li class="nav__item"><a href="#">Planer</a></li>
             <li class="nav__item"><a href="#">Historik</a></li>
             <li class="nav__item"><a href="#">Tips</a></li>
@@ -47,28 +49,28 @@
 <!-- Main Content -->
 <main>
     <!-- Säsong att så Section -->
-    <div class="planned-planthood__content">
-        <!-- Left Circular Icon -->
+    <section class="planned-planthood__content">
+        
         <div class="planned-planthood__icon-wrapper">
             <img src="Bilder/Vectorseedpackage.svg" alt="" class="planned-planthood__icon">
         </div>
         
-        <!-- Right Text and Button -->
+        
         <div class="planned-planthood__text">
             <h3>Säsong att så</h3>
             <p>Våren är äntligen här i kollektivet! Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet netus amet eu elit.</p>
             <button class="planned-planthood__button">SÅ-TIPS</button>
         </div>
-    </div>
+    </section>
 </section>
 
     <!-- Planteringar Section -->
     <section class="planteringar">
-        <h4><strong>________________________________________</strong></h4>
+        <h4>__________________________________</h4>
         <h2 class="planering__text">Våra planerade planteringar:</h2>
         <div class="planteringar__grid">
-            <!-- Exempel på plantering -->
-            <div class="plantering">
+            
+            <article class="plantering">
                 <img src="Bilder/Gurka.avif" alt="Gurka" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
                 <div class="plantering__info">
@@ -80,8 +82,8 @@
                 <button>TA BORT</button>
                 <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
                 </div>
-            </div>
-            <div class="plantering">
+            </article>
+            <article class="plantering">
                 <img src="Bilder/Tomat.avif" alt="Tomat" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
                 <div class="plantering__info">
@@ -93,8 +95,8 @@
                 <button>TA BORT</button>
                 <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
                 </div>
-            </div>
-            <div class="plantering">
+            </article>
+            <article class="plantering">
                 <img src="Bilder/Tomat1.avif" alt="Tomat" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
                 <div class="plantering__info">
@@ -106,8 +108,8 @@
                 <button>TA BORT</button>
                 <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
                 </div>
-            </div>
-            <div class="plantering ">
+            </article>
+            <article class="plantering ">
                 <img src="Bilder/Sockerärtor.avif" alt="Sockerärtor" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
                 <div class="plantering__info">
@@ -119,8 +121,8 @@
                 <button>TA BORT</button>
                 <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
                 </div>
-            </div>
-            <div class="plantering">
+            </article>
+            <article class="plantering">
                 <img src="Bilder/photo-1555447740-03e40562af94.avif" alt="Majrova" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon" class="plantering__icon">
                 <div class="plantering__info">
@@ -132,8 +134,8 @@
                 <button>TA BORT</button>
                 <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
                 </div>
-            </div>
-            <div class="plantering">
+            </article>
+            <article class="plantering">
                 <img src="Bilder/squash.avif" alt="Squash" class="plantering__bild">
                 <img src="Bilder/plant.svg" alt="icon för plantering" class="plantering__icon">
                 <div class="plantering__info">
@@ -145,7 +147,7 @@
                 <button>TA BORT</button>
                 <img src="Bilder/Vector (Stroke).png" alt="Ta bort ikon" class="plantering__icon-trash">
                 </div>
-            </div>
+            </article>
         </div>
         <button class="visafler">Visa fler</button>
     </section>
@@ -167,14 +169,14 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="footer__overlay">
+    <article class="footer__overlay">
         <p class="footer__heading">Vi hörs!</p>
         <div class="footer__contact">
             <p class="footer__phone">
                 <img src="Bilder/telephone.svg" alt="Telefon-ikon" class="footer__ikon"> 0701-234567</p>
             <p class="footer__email">mail@mail.se <img src="Bilder/envelope.svg" alt="mail ikon" class="footer__ikon"></p>
         </div>
-    </div>
+    </article>
     <div class="footer__image-wrapper">
         <img src="Bilder/Footer.avif" alt="Hand touching plant" class="footer__image">
         <img src="Bilder/Logo.svg" alt="Icon" class="footer__icon">
