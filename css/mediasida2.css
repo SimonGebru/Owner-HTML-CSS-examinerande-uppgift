@@ -46,10 +46,10 @@
     /* Styla planteringar för mobilvy */
     .planteringar__grid {
         grid-template-columns: 1fr 1fr; /* En kolumn för mobilvyn */
-        gap: 20px;
+        gap: 0px;
     }
     .plantering {
-        width: 40vw;
+        max-width: 46vw;
         height: auto;
         display: grid;
         margin-right: 10px;
@@ -58,15 +58,14 @@
         .plantering__icon {
             height: 150px;
             object-fit:fill;
-            margin-top: 40px;
-            margin-right: 0;
-            margin-left: 20px;
+            margin: 35px 0 0 40px;
             
         }
         .plantering__bild {
             height: 200px;
-            width: 130px;
+            
             object-fit: cover;
+            margin-right: 1px;
         }
     }
     .plantering__info {
@@ -108,7 +107,7 @@
         margin: 0;
         margin-top: 8px;
         margin-bottom: 8px;
-        margin-left: 15px;
+        margin-left: 9px;
     }
     
 }

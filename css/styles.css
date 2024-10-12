@@ -7,7 +7,6 @@
 html, body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    overflow-x: hidden; /* Förhindra horisontell scroll */
     height: 100%;
 }
 
@@ -43,14 +42,12 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 160px; /* Justera storleken på ikonen */
-    height: auto;
 }
 
 /* Grid Section for Brown and Green blocks */
 .header__grid {
     display: grid;
     grid-template-rows: 15rem  15rem; /* Dela upp i två lika stora block */
-    height: 100%; /* Se till att den tar upp hela höjden */
 }
 
 .header__grid-item {
@@ -59,18 +56,11 @@ html, body {
     align-items: center;
 }
 
-.header__grid-item--brown {
-    background-color: #9E6D52; /* Brun färg */
-}
+.header__grid-item--brown { background-color: #9E6D52; /* Brun färg */ }
 
-.header__grid-item--green {
-    background-color: #0A846E; /* Grön färg */
-}
+.header__grid-item--green { background-color: #0A846E; /* Grön färg */ }
 
-.header__grid-item img {
-    width: 140px; /* Justera storleken på SVG-ikonerna */
-    height: auto;
-}
+.header__grid-item img { width: 140px; /* Justera storleken på SVG-ikonerna */}
 .hamburger-menu {
     display: none; /* Dölj på stora skärmar */
     position: absolute;
@@ -86,7 +76,6 @@ html, body {
     border-bottom: 1px solid #ddd;
     text-align: center;
     padding: 10px 0;
-    box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,9 +110,7 @@ html, body {
 }
 
 /* Main Content */
-.main {
-    padding: 40px 20px;
-}
+.main { padding: 40px 20px; }
 
 /* Content Layout */
 .planned-planthood__content {
@@ -144,10 +131,7 @@ html, body {
     align-items: center;
 }
 
-.planned-planthood__icon {
-    width: 150px;
-    height: auto;
-}
+.planned-planthood__icon { width: 150px; }
 
 .planned-planthood__text {
     max-width: 500px;
@@ -182,14 +166,12 @@ html, body {
     
 }
 
-.planned-planthood__button:hover {
-    background-color: #004d00;
-}
+.planned-planthood__button:hover { background-color: #004d00; }
 
 .planteringar {
     padding: 40px 0;
     min-height: 100vh;
-    overflow: hidden;
+    
     h2 {
         text-align: center;
         margin-bottom: 40px;
@@ -220,7 +202,6 @@ html, body {
     position: relative;
     padding: 20px;
     max-height: 90vh; /* Begränsar höjden så att den inte orsakar overflow */
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     .plantering__bild {
@@ -252,9 +233,7 @@ html, body {
         display: none;
     }
 }
-.plantering__actions button:hover {
-    transform: scale(1.1);
-}
+.plantering__actions button:hover { transform: scale(1.1); }
 
 .plantering__actions p {
     color: #959393;
@@ -284,9 +263,7 @@ html, body {
     opacity: 0.8; 
 }
 
-.plantering h3 {
-    margin: 15px 0;
-}
+.plantering h3 { margin: 15px 0; }
 .visafler {
     display: block; /* Gör knappen till inline-block för att fungera med text-align */
     margin: 20px auto;
@@ -298,14 +275,12 @@ html, body {
     font-size: 1.2rem;
     border-radius: 5px;
 }
-.visafler:hover {
-    transform: scale(1.1);
-}
+.visafler:hover { transform: scale(1.1); }
 .odlingar {
     min-height: 40vh;
     padding: 40px 20px;
     background-color: white;
-    overflow: hidden;
+    
 }
 
 .odlingar__content {
@@ -315,9 +290,7 @@ html, body {
     gap: 200px;
 }
 
-.odlingar__text {
-    max-width: 50%;
-}
+.odlingar__text { max-width: 50%; }
 
 .odlingar__text h2 {
     font-size: 3rem;
@@ -443,6 +416,4 @@ html, body {
     
 }
 
-.footer__top-link:hover {
-    text-decoration: underline;
-}
+.footer__top-link:hover { text-decoration: underline; }
